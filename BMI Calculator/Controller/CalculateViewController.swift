@@ -15,6 +15,8 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var weightSlider: UISlider!
     
+    var bmi:Float = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -43,8 +45,7 @@ class CalculateViewController: UIViewController {
         let weight = weightSlider.value
         
         //        BMI formular
-        let bmi = weight / pow(height, 2)
-        print(bmi)
+        bmi = weight / pow(height, 2)
         
 //         ใช้ SecondViewController.swift
         //        ทีนี้เราจะเขียนต่อว่าถ้ากดปุ่มคำนวณมาจะให้มันไปเรียกหน้าที่ 2 มาแสดง
@@ -56,7 +57,20 @@ class CalculateViewController: UIViewController {
         ////        เอาหน้าจอมาที่สองมาแสดงทับหน้าจอแรก
         //        self.present(secondVC, animated: true , completion: nil)
         
-//        ใช้ตัว ResultViewController -> Coaco Touch
+//        ใช้ตัว ResultViewController -> Cocoa Touch
+//        goToResult มาจากการตั้ง indentifier ใน segue ตอนลากเชื่อมต่อหน้าไปยัง ResultViewController
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+        
+    }
+    
+    //        ทีนี้เราจะส่งค่าไปให้อีกหน้าด้วยการใช้ func นี้
+    override func prepare(for segue:UIStoryboardSegue , sender:Any?){
+//        ต้องเช็คก่อนแหละนะเพราะว่าถ้ามันมีหลาย ๆ หน้าเข้าจะได้รู้ว่ามันต้องไปยุ่งกับหน้าไหน
+        if segue.identifier == "goToResult" {
+//            ให้มันอ้างอิงไปหาหน้า Result
+            let destinationVC = segue.destination as! ResultViewController
+            destinationVC.bmiValue = String(format: "%.1f", bmi)
+        }
     }
 }
 
