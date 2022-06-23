@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculateViewController: UIViewController {
     
     @IBOutlet weak var heightLB: UILabel!
     @IBOutlet weak var weightLB: UILabel!
@@ -45,6 +45,18 @@ class ViewController: UIViewController {
         //        BMI formular
         let bmi = weight / pow(height, 2)
         print(bmi)
+        
+//         ใช้ SecondViewController.swift
+        //        ทีนี้เราจะเขียนต่อว่าถ้ากดปุ่มคำนวณมาจะให้มันไปเรียกหน้าที่ 2 มาแสดง
+        //        let secondVC = SecondViewController()
+        //
+        ////        ส่งค่าจากตัวแปร bmi ไปที่หน้าที่สอง
+        //        secondVC.bmiValue = String(format: "%0.1f", bmi)
+        //
+        ////        เอาหน้าจอมาที่สองมาแสดงทับหน้าจอแรก
+        //        self.present(secondVC, animated: true , completion: nil)
+        
+//        ใช้ตัว ResultViewController -> Coaco Touch
     }
 }
 
