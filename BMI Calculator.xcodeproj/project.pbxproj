@@ -10,6 +10,7 @@
 		E37BD138286443A0002543F2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BD137286443A0002543F2 /* SecondViewController.swift */; };
 		E37BD13A28644A5C002543F2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BD13928644A5C002543F2 /* ResultViewController.swift */; };
 		E37BD13C28645283002543F2 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BD13B28645283002543F2 /* CalculatorBrain.swift */; };
+		E37BD13E28645E86002543F2 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BD13D28645E86002543F2 /* BMI.swift */; };
 		E3FAA301286426E10054DF8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FAA300286426E10054DF8A /* AppDelegate.swift */; };
 		E3FAA303286426E10054DF8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FAA302286426E10054DF8A /* SceneDelegate.swift */; };
 		E3FAA305286426E10054DF8A /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FAA304286426E10054DF8A /* CalculateViewController.swift */; };
@@ -22,6 +23,7 @@
 		E37BD137286443A0002543F2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E37BD13928644A5C002543F2 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		E37BD13B28645283002543F2 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		E37BD13D28645E86002543F2 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 		E3FAA2FD286426E10054DF8A /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FAA300286426E10054DF8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3FAA302286426E10054DF8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				E37BD13B28645283002543F2 /* CalculatorBrain.swift */,
+				E37BD13D28645E86002543F2 /* BMI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				E37BD13C28645283002543F2 /* CalculatorBrain.swift in Sources */,
 				E37BD13A28644A5C002543F2 /* ResultViewController.swift in Sources */,
 				E37BD138286443A0002543F2 /* SecondViewController.swift in Sources */,
+				E37BD13E28645E86002543F2 /* BMI.swift in Sources */,
 				E3FAA305286426E10054DF8A /* CalculateViewController.swift in Sources */,
 				E3FAA301286426E10054DF8A /* AppDelegate.swift in Sources */,
 				E3FAA303286426E10054DF8A /* SceneDelegate.swift in Sources */,
