@@ -15,7 +15,7 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var weightSlider: UISlider!
     
-    var bmi:Float = 0.0
+    var calculatorBrain = CalculatorBrain(bmiValue: 0.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +44,10 @@ class CalculateViewController: UIViewController {
         let height = heightSlider.value
         let weight = weightSlider.value
         
+        calculatorBrain.calculateBMI(height:height , weight:weight)
+        
         //        BMI formular
-        bmi = weight / pow(height, 2)
+//        bmi = weight / pow(height, 2)
         
 //         ใช้ SecondViewController.swift
         //        ทีนี้เราจะเขียนต่อว่าถ้ากดปุ่มคำนวณมาจะให้มันไปเรียกหน้าที่ 2 มาแสดง
@@ -69,7 +71,7 @@ class CalculateViewController: UIViewController {
         if segue.identifier == "goToResult" {
 //            ให้มันอ้างอิงไปหาหน้า Result
             let destinationVC = segue.destination as! ResultViewController
-            destinationVC.bmiValue = String(format: "%.1f", bmi)
+            destinationVC.bmiValue = calculatorBrain.getBMIValue()
         }
     }
 }
