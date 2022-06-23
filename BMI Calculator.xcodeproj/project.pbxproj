@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E37BD138286443A0002543F2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BD137286443A0002543F2 /* SecondViewController.swift */; };
 		E3FAA301286426E10054DF8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FAA300286426E10054DF8A /* AppDelegate.swift */; };
 		E3FAA303286426E10054DF8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FAA302286426E10054DF8A /* SceneDelegate.swift */; };
 		E3FAA305286426E10054DF8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FAA304286426E10054DF8A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E37BD137286443A0002543F2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E3FAA2FD286426E10054DF8A /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FAA300286426E10054DF8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3FAA302286426E10054DF8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				E3FAA304286426E10054DF8A /* ViewController.swift */,
+				E37BD137286443A0002543F2 /* SecondViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37BD138286443A0002543F2 /* SecondViewController.swift in Sources */,
 				E3FAA305286426E10054DF8A /* ViewController.swift in Sources */,
 				E3FAA301286426E10054DF8A /* AppDelegate.swift in Sources */,
 				E3FAA303286426E10054DF8A /* SceneDelegate.swift in Sources */,
